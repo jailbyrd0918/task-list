@@ -1,0 +1,266 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  border: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  width: inherit;
+  height: inherit;
+}
+
+.add-dialog-wrapper {
+  display: flex;
+  justify-content: right;
+
+  width: 40rem;
+}
+
+.add-dialog-btn {
+  margin: 1rem;
+  padding: 1rem;
+
+  border: none;
+  border-radius: 1rem;
+
+  font-size: 1rem;
+
+  color: #fbbf24;
+  text-shadow:
+    0 0 2px #fbbf24,
+    0 0 8px #fbbf24,
+    0 0 20px #fbbf24;
+
+  transition: all .1s;
+}
+
+.add-dialog-btn:hover {
+  margin: 1rem;
+  padding: 1rem;
+
+  border: none;
+  border-radius: 1rem;
+
+  font-size: 1rem;
+
+  color: darkslategray;
+  background-color: #fbbf24;
+
+  box-shadow:
+    0 0 2px #fbbf24,
+    0 0 8px #fbbf24,
+    0 0 20px #fbbf24;
+}
+
+.dialog {
+  border: none;
+  border-radius: 1rem;
+
+  width: 35rem;
+  height: 35rem;
+}
+
+.dialog::backdrop {
+  backdrop-filter: blur(10px);
+}
+
+.dialog label {
+  font-size: 2rem;
+}
+
+.dialog textarea {
+  font-size: 1rem;
+
+  width: 99%;
+  
+  resize: none;
+}
+
+.dialog-btn-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+
+  margin: 1rem;
+}
+
+.dialog-btn-container button {
+  padding: 1rem;
+  border-radius: 1rem;
+
+  font-size: 1rem;
+}
+
+.btn-cancel {
+  color: red;
+  text-shadow:   
+    0 0 2px red, 
+    0 0 8px red, 
+    0 0 20px red; 
+
+  transition: all .1s;
+}
+
+.btn-cancel:hover {
+  color: white;
+  text-shadow: none;
+
+  background-color: red;
+  box-shadow:
+    0 0 2px red, 
+    0 0 8px red, 
+    0 0 20px red; 
+}
+
+.btn-add {
+  color: lightskyblue;
+  text-shadow:   
+  0 0 2px lightskyblue, 
+  0 0 8px lightskyblue, 
+  0 0 20px lightskyblue; 
+
+  transition: all .1s;
+}
+
+.btn-add:hover {
+  color: gray;
+  text-shadow: none;
+
+  background-color: lightskyblue;
+  box-shadow:
+    0 0 2px lightskyblue, 
+    0 0 8px lightskyblue, 
+    0 0 20px lightskyblue; 
+}
+
+.list-container {
+  list-style-type: none;
+  
+  width: 40rem;
+  padding-top: 1rem;
+}
+
+.list-container div {
+  display: flex;
+  gap: .5rem;
+
+  padding: 1rem;
+}
+
+.list-container div button {
+  border-radius: 10px;
+
+  font-size: 1rem;
+  text-align: center;
+
+  background: none;
+}
+
+.task-item-desc {
+  flex: 1;
+  
+  font-size: 1rem;
+  
+  border: none;
+  resize: none;
+}
+
+.task-item-status {
+  flex: 0 0 20%;
+
+  border: none;
+  text-align: center;
+
+  color: lightgray;
+  text-shadow:   
+    0 0 2px lightgray, 
+    0 0 8px lightgray, 
+    0 0 20px lightgray; 
+
+  transition: all .2s;
+}
+
+.task-item-status-item {
+  color: white;
+  background: none;
+  text-shadow: none;
+}
+
+.task-item-edit {
+  flex: 0 0 12%;
+
+  color: lightskyblue;
+  text-shadow:   
+    0 0 2px lightskyblue, 
+    0 0 8px lightskyblue, 
+    0 0 20px lightskyblue; 
+
+  transition: all .2s;
+}
+
+.task-item-edit:hover {
+  flex: 0 0 12%;
+
+  color: gray;
+  text-shadow: none;
+
+  background-color: lightskyblue;
+  box-shadow:
+    0 0 2px lightskyblue, 
+    0 0 8px lightskyblue, 
+    0 0 20px lightskyblue; 
+}
+
+.task-item-delete {
+  flex: 0 0 12%;
+
+  color: red;
+  text-shadow:   
+    0 0 2px red, 
+    0 0 8px red, 
+    0 0 20px red; 
+
+  transition: all .2s;
+}
+
+.task-item-delete:hover {
+  flex: 0 0 12%;
+
+  color: white;
+  text-shadow: none;
+
+  background-color: red;
+  box-shadow:
+    0 0 2px red, 
+    0 0 8px red, 
+    0 0 20px red; 
+}
+
+.item-container {
+  width: 100%;
+
+  border-top: 1px solid #ccc;
+}

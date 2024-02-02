@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title class="unselectable">Task List</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Task List</h1>
+      
+      <div class="add-dialog-wrapper">
+        <button class="add-dialog-btn" onclick="openAddDialog()">Add Task</button>
+      </div>
+        
+      <dialog class="dialog" id="add-dialog">
+        <form method="dialog">
+          <label for="task_desc">Task: </label>
+          <textarea id="task_desc" name="task_desc" rows="20"></textarea>
+
+          <div class="dialog-btn-container">
+            <button class="btn-cancel" formmethod="dialog">Cancel</button>
+            <button class="btn-add" type="submit" onclick="addTask()">Add</button>
+          </div>
+        </form>
+      </dialog>
+
+      <div id="tasks" class="list-container"></div>
+    </div>
+    
+    <script src="./main.js"></script>
+  </body>
+</html>
